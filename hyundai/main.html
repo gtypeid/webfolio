@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- NONE MODULE -->
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="slider.js"></script>
+    <script type="text/javascript" src="menu-selector.js"></script>
+    <script type="text/javascript" src="car-vr.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Document</title>
+</head>
+<body onselectstart="return false">
+    <div class="header">
+        <div class="nav-top">
+            <ul class="nav-list">
+                <li> <a href="">개인 로그인</a> </li>
+                <li> <a href="">법인 로그인</a> </li>
+                <li> <a href="">회원가입</a> </li>
+                <li> <a href="">WORLDWIDE</a> </li>
+                <li> <a href="">채용</a> </li>
+                <li> <a href="">LANGUAGE</a> </li>
+                <li> <a href="">검색</a> </li>
+            </ul>
+        </div>
+        <div class="nav-bottom">
+            <ul class="nav-list">
+                <li> <div class="img-wrap"> <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/common/h1-logo.png" alt="">  </div></li>
+                <li> <a href="">전체 모델</a> </li>
+                <li> <a href="">구매가이드</a> </li>
+                <li> <a href="">브랜드</a> </li>
+                <li> <a href="">고객서비스</a> </li>
+                <li> <a href="">회사소개</a> </li>
+                <li> <a href="">이벤트</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="slider-top"></div>
+        <div class="car-selecter">
+            <div class="car-selecter-box">
+                <div class="car-selecter-nav">
+                    <ul class="car-selecter-nav-list">
+                        <li class="e-menu-active"> <a href=""> 전체모델</a> </li>
+                        <li> <a href=""> NEW</a> </li>
+                        <li> <a href=""> 인기모델</a> </li>
+                        <li> <a href=""> 승용</a> </li>
+                        <li> <a href=""> SUV/MPV</a> </li>
+                        <li> <a href=""> 친환경</a> </li>
+                        <li> <a href=""> 소형상용/택시</a> </li>
+                    </ul>
+                </div>
+                <div class="car-selecter-button-wrap">
+                </div>
+                <div class="car-selecter-move-wrap">
+
+                </div>
+            </div>
+            <div class="vr-template ">
+                <div class="car-ui-box" id="car-ui-box">
+                    <div class="car-button-box">
+                        <div class="button car-button left"></div>
+                        <div class="button car-button right"></div>
+                    </div>
+                    <h1 class="car-type" id="car-type"></h1>
+                    <div class="car-select" >
+                        <div class="e-car-var-color-pick"></div>
+                        <ul id="car-select-table">
+                        </ul>
+                    </div>
+                    <h1 style="text-align: center; padding-top: 350px;"> 360 VR </h1>
+                </div>
+
+                <div class="car-place" id="car-place">
+                    <img class="car-img" id="car-img" src="" alt="" ondragstart="return false">
+                </div>
+
+            </div>
+        </div>
+        <div class="slider-bottom"></div>
+        <div class="customer-service">
+            <div class="top">
+                <h1 class="title"> Customer Service</h1>
+                <p class="sub"> 블루멤버스와 함께 현대자동차의 다양한 서비스를 확인하시려면 로그인하세요. </p>
+                <div class="button-wrap">
+                    <div class="b-blue"> <a href=""> 로그인 </a> </div>
+                    <div class="b-blue"> <a href=""> 회원가입 </a> </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div>
+                    <div class="service-list">
+                        <div class="service-element">
+                            <div class="img-wrap">
+                                <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/service-network-pc.jpg" alt="">
+                                <div class="inner-box">
+                                    <a href="">서비스 네트워크</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-element">
+                            <div class="img-wrap">
+                                <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/bluemembers-point-pc.jpg" alt="">
+                                <div class="inner-box">
+                                    <a href="">블루멤버스 포인트</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-element">
+                            <div class="img-wrap">
+                                <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/car-management-pc.jpg" alt="">
+                                <div class="inner-box">
+                                    <a href="">차량관리 서비스</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-element">
+                            <div class="img-wrap">
+                                <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/bluelink-pc.jpg" alt="">
+                                <div class="inner-box">
+                                    <a href="">블루링크</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="quick-menu">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/main-quick-monthly-purchasing-benefits-pc.png">
+                        <p>이달의 <br> 구매혜택</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/main-quick-estimate-pc.png">
+                        <p>내차 만들기 <br> (견적)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/main-quick-branch-pc.png">
+                        <p>전시차 <br>조회</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/main-quick-test-drive-apply-pc.png">
+                        <p>시승신청</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/main-quick-catalog-download-pc.png">
+                        <p>카탈로그<br>다운로드</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/main-quick-purchase-consultation-guide-pc.png">
+                        <p>구매상담<br>신청</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/main-quick-navigation-update-pc.png">
+                        <p>네비게이션<br>업데이트</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/main-quick-mall-pc.png">
+                        <p>블루멤버스<br>포인트몰</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

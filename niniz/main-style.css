@@ -1,0 +1,702 @@
+
+
+.main-home
+{
+    color: black;
+}
+
+.main-head
+{
+    /* 속성들을 감싸고 있는 막이 고정되어있지 않다면 속성들이 크기에 따라 움직임	(헤드 카테고리나, 헤드 카테고리 유틸) */
+    /* 고정화시키면 그 바가 쭉 아래로 내려온다 */
+    position: fixed;
+    background-color: #fff;
+    z-index : 20;
+    left: 0px;
+    right: 0px;
+}
+
+.main-head-scroll
+{
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    background: url("https://t1.kakaocdn.net/friends/kfo-common/pc/bg_head.png");
+
+    display: none;
+}
+
+.mian-head-inner
+{
+    /*  inner에 postion을 relative로 설정하지 않으면, 아래의 항목들이 다시 초기화 되어, util이 자동화로 설정된다 
+        결국 화면 변화에 따라 자동으로 움직이기에 의도에 알맞지 않음 */
+    position: relative;
+    overflow : visible;
+    margin: 0px 30px 0px 30px;
+    height: 80px;
+    width: 1080px;
+    min-width: 1080px;
+} 
+
+@media (max-width: 768px)
+{
+    .mian-head-inner
+    {
+    /*  inner에 postion을 relative로 설정하지 않으면, 아래의 항목들이 다시 초기화 되어, util이 자동화로 설정된다 
+        결국 화면 변화에 따라 자동으로 움직이기에 의도에 알맞지 않음 */
+    /* auto */
+    width: 500px;
+    height: 60px;
+    }    
+}
+
+.main-logo
+{
+    float: left;
+}
+
+@media (max-width: 768px)
+{
+    .main-logo
+    {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.main-head-table
+{
+    /*  포지션을 자동화가 아닌 위치화 시킴. 포지션이 자동화되어있으면, 화면 변화에 따라 그것도 자동으로 움직이기 때문에 
+        포지션을 고정화 시키고 화면이 움직이면 상위 pixed에 기반되어 변경되지 아니한다 */
+
+    /*  원래는 화면을 움직임에 따라 칸이 작으면 자동적으로 아래로 내려가는 등의 효과가 나타났음 */
+    position: absolute;
+    font-size: 16px;
+    font-weight : 800;
+    left: 250px;
+}
+
+@media (max-width: 768px)
+{
+    .main-head-table
+    {
+        /* 숨길 수 있다 */
+        display: none;
+    }
+}
+
+.main-head-table-util
+{
+    /* 위의 주석 내용과 같다 right로 정렬함*/
+    position: absolute;
+    font-size: 16px;
+    font-weight : 800;
+    right: 0px;
+}
+
+@media (max-width: 768px)
+{
+    .main-head-table-util
+    {
+        display: none;
+    }
+}
+
+.main-head-table-element
+{
+    float: left;
+    padding: 25px 10px 0 11px;
+}
+
+.intro-image
+{   
+    overflow: hidden;
+    padding-top: 40px;
+    width: 1080px;
+}
+
+ @media (max-width: 768px)
+ {
+     .intro-image
+     {
+        /* auto */
+        width: auto;
+     }
+ }
+
+ @media (max-width: 768px)
+ {
+    .intro-image-wrap
+    {
+        overflow: hidden;
+        background-color: white;
+    }
+ }
+
+
+ .intro-big
+ {
+     display: block;
+ }
+
+ @media (max-width: 768px)
+ {
+     .intro-big
+     {
+         display: none;
+     }
+ }
+
+ .intro-small
+ {
+     display: none;
+ }
+ 
+ @media (max-width: 768px)
+ {
+     .intro-small
+     {
+         display: block;
+         float: none;
+         width: 400px;
+     }
+ }
+
+
+.main-contnet
+{
+    width: 1080px;
+    margin: 0px auto 0px;
+}
+
+
+@media (max-width: 768px)
+{
+    .main-contnet
+    {
+        /* auto */
+        width: auto;
+    }
+}
+
+.content-wrap
+{
+    width: 1050px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px)
+{
+    .content-wrap
+    {
+        /* auto */
+        width: auto;
+    }
+}
+
+.main-contnet-inner
+{
+    width: 100%;
+    height: 100%;
+}
+
+.contnet-category-table
+{
+    overflow: hidden;
+    padding: 8px 0 14px;
+    border-bottom: 1px solid black;
+    margin: 0px 0px 18px;
+}
+
+.content-category-table-element
+{
+    float: left;
+    font-size: 17px;
+    padding: 7px 11px 7px 13px;
+    color: darkgray;
+
+}
+
+@media (max-width: 768px)
+{
+    .content-category-table-element
+    {
+        float: left;
+        font-size: 12px;
+        padding: 7px 11px 7px 13px;
+        color: darkgray;
+    }
+}
+
+.font-select-bold
+{
+    float: left;
+    font-weight: bold;
+    color: black;
+}
+
+.contnet-category-sort-table
+{
+    overflow: hidden;
+    margin: 0px 0px 18px;
+}
+
+.content-category-sort-table-element
+{
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    color: #666;
+    padding: 7px 11px 7px 13px;
+}
+
+@media (max-width: 768px)
+{
+    .content-category-sort-table-element
+    {
+        font-size: 13px;
+    }
+}
+
+.img-thumb
+{
+    width: 240px;
+    height: 240px;
+    border-radius: 5%;
+}
+
+@media (max-width: 768px)
+{
+    .img-thumb
+    {
+        width: 135px;
+        height: 135px;
+        border-radius: 5%;
+    }
+}
+
+.list-table
+{
+    overflow: hidden;
+}
+
+@media (max-width: 768px)
+{
+    .list-table
+    {
+    }
+}
+
+
+/* table -> table element 처럼 접근 가능 */
+/* .list-table list-table-element */
+.list-table-element
+{
+    float: left;
+    overflow: hidden;
+    padding: 0 10px 40px;
+}
+
+.list-table-sale-element
+{
+    /*
+    margin: 0 0px -40px 0px;
+    padding: 0 0px -40px 0px;
+    */
+}
+
+.list-table-element-name
+{
+    display: block;
+    padding: 20px 0px 10px 0px ;
+    font-size: 18px;
+}
+
+@media (max-width: 768px)
+{
+    .list-table-element-name
+    {
+        font-size: 11px;
+    }
+}
+
+.list-table-element-price
+{
+    display: block;
+    padding: 0px 0px 20px 0px;
+}
+
+@media (max-width: 768px)
+{
+    .list-table-element-price
+    {
+        font-size: 9px;
+    }
+}
+
+.list-table-element-prv-price
+{
+    display: block;
+    text-decoration: line-through;
+    color: #999;
+    padding: 0px 0px 0px 0px;
+}
+
+@media (max-width: 768px)
+{
+    .list-table-element-prv-price
+    {
+        font-size: 9px;
+    }
+}
+
+.list-table-element-sale-icon
+{
+    position: absolute;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    content: url( "https://img.icons8.com/officel/50/000000/sale.png" );
+    z-index: 1;
+}
+
+@media (max-width: 768px)
+{
+    .list-table-element-sale-icon
+    {
+        left : 105px;
+        top : -210px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.list-table-element-wrap
+{
+    overflow: hidden;
+    color: black;
+    width: 240px;
+    height: 240px;
+}
+
+.thumg-wrap
+{
+    position: relative;
+}
+
+.main-contnet-end
+{
+    border-top : 1px solid black;
+}
+
+.page-wrap
+{   
+    overflow: hidden;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.page-element
+{
+    display: inline;
+    padding: 10px;
+}
+.page-element-select
+{
+    color: rgba(255, 255, 255, 1.0);
+    background-color: black;
+}
+
+.main-footer
+{
+    display: block;
+    /*  auto로 하면 할당된 크기만큼 (텍스트라면 텍스트 길이만큼)
+        영역을 명확하게 설정해준다 그러면 백그라운드 칼라가 크기만큼 할당됨 */
+    width: 100%;
+    height: 325px;
+
+    background-color: #1e1e1e;
+}
+
+@media (max-width: 768px)
+{
+    .main-footer
+    {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.main-footer-inner
+{
+    position: absolute;
+    left: 70px;
+    margin: 50px 0px 0px 0px;
+}
+
+@media (max-width: 768px)
+{
+    .main-footer-inner
+    {
+        position: static;
+    }
+}
+
+.main-footer-service
+{
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px)
+{
+    .main-footer-service
+    {
+        position: relative;
+        top: 25px;
+    }
+}
+
+
+.main-footer-service-element
+{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+.main-footer-infor-element
+{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+/* GLOBAL Margin, Padding ZERO */
+body, div, ul, li 
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* GLOBAL List-style NONE */
+.dl, li
+{
+    list-style: none;
+}
+
+/* GLOBLA text-decoration NONE */
+
+/*
+.a
+{
+    text-decoration: none;
+}
+
+A:hover
+{
+    text-decoration: none;
+}
+*/
+
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.carousel
+{
+    padding-top: 60px;
+}
+
+
+
+.intro-carousel-wrap
+{
+    width: 1050px;
+    margin: 0px;
+    /* width: 800px; */
+    /* margin: auto; */
+}
+
+
+@media (max-width: 768px)
+{
+    .intro-carousel-wrap
+    {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.content-line
+{
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.content-prev-item-liet
+{
+    overflow: hidden;
+}
+.content-prev-item-liet li
+{
+    float: left;
+    width: 500px;
+    padding-bottom : 50px;
+}
+
+@media (max-width: 768px)
+{
+    .content-prev-item-liet li
+    {
+        padding-bottom : 25px;
+    }
+}
+
+.prev-href-wrap
+{
+    color: #999;
+}
+
+.prev-thumg-wrap
+{
+    overflow: hidden;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+}
+
+.prev-thumg-img
+{
+    display: block;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.prev-item-price-sale
+{
+    display: inline;
+    color: red;
+    font-size: 15px;
+}
+.prev-item-name
+{
+    display: inline;
+    color: #1e1e1e;
+}
+.prev-item-price
+{
+    display: block;
+    color: #959595;
+}
+
+.prev-item-outtro
+{
+    width: 100%;
+}
+.contnet-detail
+{
+    padding-top: 40px;
+}
+.contnet-detail-nav-wrap
+{
+    display: block;
+    text-align: center;
+
+}
+
+.contnet-detail-nav-home
+{
+    font-weight: 400;
+    font-size: 19px;
+    color: #999;
+}
+
+.contnet-detail-element-slash
+{
+    font-weight: 400;
+    font-size: 19px;
+    color: #999;
+}
+
+.contnet-detail-nav-category
+{
+    font-weight: 400;
+    font-size: 19px;
+    color: #999;
+}
+
+.contnet-detail-element-name
+{
+    text-align: center;
+    font-weight: 1000;
+    font-size: 55px;
+
+    line-height: 35px;
+    margin: 15px;
+}
+
+.contnet-detail-element-price
+{
+    text-align: center;
+    font-weight: 100;
+    font-size: 28px;
+
+    line-height: 35px;
+    margin: 15px;
+}
+
+
+
+@media (max-width: 768px)
+{
+
+    .contnet-detail-nav-home
+    {
+        font-size: 15px;
+    }
+    
+    .contnet-detail-element-slash
+    {
+        font-size: 15px;
+    }
+    
+    .contnet-detail-nav-category
+    {
+        font-size: 15px;
+    }
+    
+    .contnet-detail-element-name
+    {
+        font-size: 32px;
+        font-weight: 900;
+
+        line-height: 30px;
+        margin: 8px;
+    }
+    
+    .contnet-detail-element-price
+    {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 8px;
+    }
+    
+}
+
+
+.content-prev-item-name
+{
+    display: block;
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+
+.contnet-prev-outtor-wrap
+{
+    display: block;
+    overflow: hidden;
+}

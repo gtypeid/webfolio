@@ -1,0 +1,151 @@
+﻿
+
+
+/**/
+.head { width: 100%; height: 75px; background-color: white; z-index: 2;}
+.head .head-logo { position: absolute; left: 10px;}
+.head .head-nav { position: absolute; right: 10px; top :40%;}
+.head .head-nav ul li { float: left; }
+.head .head-nav ul li:hover { opacity: 0.7;}
+.head .head-nav ul li a { padding: 10px 20px;}
+.head .head-mnav { position: absolute; right: 10px; top: 38%; width: 30px; height: 20px; cursor: pointer; z-index: 2; display: none;}
+.head .head-mnav span { width: 100%; height: 4px; background-color: black; display: block; margin-bottom: 5px;}
+.head .head-mnav span:nth-of-type(1) { background-color: red;}
+
+.head .maxwidth .amount { background-color: rgba(0,0,0,.8); width: 0%; height: 1.5px; position: absolute; bottom: 0px; }
+
+.body { width: 100%; padding-top : 70px;}
+
+.body .section0 { padding: 50px 10px; }
+.body .section1 { width: 100%; padding: 50px 0px;}
+.body .section1 .imgdiv { display: none; height: 1000px;} 
+.body .section1 .imgdiv img {width: 100%; height: 50vh; object-fit:cover;}
+
+.body .section2 { padding: 50px 0px; /**/ overflow: hidden;}
+.body .section2 p {margin-bottom: 25px; padding: 0px 10px;}
+.body .section2 .left-wrap { width: 50%; float: left;}
+.body .section2 .right-wrap { width: 50%; float: right;}
+
+.body .section3 { padding: 50px 0px;}
+.body .section3 .top-wrap { /**/ overflow: hidden;}
+.body .section3 .top-wrap div:first-child { width: 50%; height: 100%; float: left; }
+.body .section3 .top-wrap div:last-child { width: 50%; height: 100%; float: right; }
+.body .section3 .top-wrap div img { width: 99%; height: 100%;}
+
+.body .section3 .bottom-wrap { /**/ overflow: hidden;}
+.body .section3 .bottom-wrap div:first-child { width: 50%; height: 100%; float: left; }
+.body .section3 .bottom-wrap div:last-child { width: 50%; height: 100%; float: right; }
+.body .section3 .bottom-wrap div img { width: 99%; height: 100%;}
+
+.body .section4 { overflow: hidden;}
+.body .section4 .s3-content0 { float: left; width: 33.33%; }
+.body .section4 .s3-content1 { float: left; width: 33.33%; }
+.body .section4 .s3-content2 { float: left; width: 33.33%; }
+.body .section4 .s3-content0 div {padding: 0px 10px;}
+.body .section4 .s3-content1 div {padding: 0px 10px;}
+.body .section4 .s3-content2 div {padding: 0px 10px;}
+
+.footer .fcontent0 { margin-bottom: 80px; }
+.footer .fcontent0 ul {  /**/ overflow: hidden; }
+.footer .fcontent0 ul li {float: left; }
+.footer .fcontent1 {width: 100%; height: 30px; text-align: center;}
+
+/**/
+.maxwidth{  max-width: 1080px;  margin: 0px auto;}
+.section-font { font-size: 1.35rem;}
+.img-on { display: block !important;}
+.navm-on { }
+
+.navm-change {background-color: white; left: 0px !important; top: 75px !important; z-index: 3; width: 100%; overflow: hidden !important; 
+    display: block !important;} 
+.navm-change ul li {float: none !important; margin: 15px 0px;} 
+
+/**/
+.hovereffect { overflow: hidden; cursor: pointer; position: relative;}
+.hovereffect:hover img{  transition-duration: 0.6s; transform: translateX(4px); }
+.hovereffect:hover .effect-div {transition-duration: 0.5s; left: 5%; opacity: 1.0;}
+.hovereffect:hover .effect-back {transition-duration: 0.6s; transform: translateX(4px); opacity: 0.3;}
+
+/**/
+.effect-div { position: absolute; top: 10%; left: 90%; opacity: 0.0; color: white; width: 400px !important;}
+.effect-back { background-color: rgba(100, 100, 100); opacity: 0.0; width: 100%; height: 99%; top: 0px; position: absolute;}
+
+.effect-rotat0 { transition-duration: 0.7s; position: absolute; transform: rotate(45deg);  display: inline !important; background-color: black !important; margin-bottom: 0px !important; top: 7px; }
+.effect-rotat1 { transition-duration: 0.33s; position: absolute; transform: rotate(180deg); display: inline !important; margin-bottom: 0px !important; top: 7px; opacity: 0.0;}
+.effect-rotat2 { transition-duration: 0.7s; position: absolute; transform: rotate(-45deg); display: inline !important; margin-bottom: 0px !important; top: 7px;}
+
+.effect-rotat-origin { transition-duration: 0.7s; transform: rotate(0deg); width: 100%; height: 4px; background-color: black; display: block; margin-bottom: 5px;}
+
+
+/**/
+@media (min-width: 768px) 
+{
+    .head .head-nav { display: block;}
+    .head .maxwidth .amount {height: 0px;}
+    .body .section1 .imgdiv img {height: 100%;}
+}
+@media (max-width: 768px) 
+{
+    .head { position: fixed; box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.3); }
+    .head .maxwidth .amount {height: 2.2px; width: 0%;}
+    .head .head-nav { display: none;}
+    .head .head-mnav { display: block;}
+    
+    .body .section1 .imgdiv { height: 100%;} 
+    .body .section1 .imgdiv img {height: 70vh;}
+
+    .body .section2 .left-wrap { width: 100%;}
+    .body .section2 .right-wrap { width: 100%;}
+    .body .section4 .s3-content0 { width: 100%;}
+    .body .section4 .s3-content1 { width: 100%;}
+    .body .section4 .s3-content2 { width: 100%; }
+    
+}
+@media (max-width: 400px)
+{
+    .head { position: fixed; height: 50px; box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.3);}
+    .head-logo img {height: 50px;}
+    .head .head-mnav { width: 22px;}
+    .head .head-mnav span { margin-bottom: 3px;}
+    .head .maxwidth .amount {height: 1.7px; width: 0%; }
+
+    .navm-change { top: 50px !important;}
+
+    .body .section0 { text-align: center;}
+    .body .section2 { text-align: center;}
+    .body .section4 { text-align: center;}
+
+    .body .section1 .imgdiv { height: 100%;} 
+    .body .section1 .imgdiv img {height: 40vh;}
+
+    .body .section3 .top-wrap div:first-child { float: none; width: 99%; margin: 0px auto;}
+    .body .section3 .top-wrap div:last-child { float: none; width: 99%; margin: 0px auto;}
+    .body .section3 .bottom-wrap div:first-child { float: none; width: 99%; margin: 0px auto;}
+    .body .section3 .bottom-wrap div:last-child { float: none; width: 99%; margin: 0px auto;}
+
+
+
+    .section-font { font-size: 1.2rem;}
+} 
+
+
+
+/* global */
+
+body    {   font-size: 0.938em; }
+html, body, div, span, iframe, p, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+input, textarea, button, select, table, th, td, article, aside, section, figure, figcaption, img
+{   margin: 0px;    padding: 0px;   border: 0px;    }
+
+a{  text-decoration: none;  color: inherit; }
+li{ list-style:none;    }
+
+
+/* Chrome, Safari용 스크롤 바 */
+::-webkit-scrollbar {width: 8px; height: 8px; border: 3px solid #fff; }
+::-webkit-scrollbar-button:start:decrement, 
+::-webkit-scrollbar-button:end:increment {display: block; height: 10px; background: url() #efefef}
+::-webkit-scrollbar-track {background: #efefef; -webkit-border-radius: 10px; border-radius:10px; 
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.2); }
+::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: rgba(0,0,0,.2); -webkit-border-radius: 8px; border-radius: 8px; 
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.1);}

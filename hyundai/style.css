@@ -1,0 +1,103 @@
+
+
+:root{
+    --headerHeight : 100px;
+    --navTopHeight : 30px;
+    --navBottomHeight : 70px;
+    --navTopListWidth: 600px;
+    --navBottomListWidth : 1200px;
+    --sliderHeight : 560px;
+    --sliderMaxWidth: 1800px;
+    --sliderControllerHeight : 100px;
+
+}
+
+.header { width: 100%; height: var( --headerHeight ); box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);}
+    .nav-top { height: var( --navTopHeight ); border-bottom: 1px solid #efefef;}
+        .nav-top .nav-list { width: var(--navTopListWidth);  margin: 0px auto; float: right; display: flex; font-size: 10px; color: #626262; }
+        .nav-top .nav-list li { padding: 8px;}
+    .nav-bottom { height: var(--navBottomHeight); border-bottom: 1px solid #efefef;}
+        .nav-bottom .nav-list { max-width: var(--navBottomListWidth); height: 100%; margin: 0px auto; display: flex; color: #626262; }
+        .nav-bottom .nav-list li { padding: 8px 45px; line-height : 3.5; }
+        .nav-bottom .nav-list li a{ display: inline-block; width: 100%; height: 100%;}
+        .nav-bottom .nav-list li:first-child { position: relative; top: -5.5px;}
+
+.customer-service { width: 100%; max-width: var(--sliderMaxWidth); float: right; height: 700px;
+                    background: url("https://www.hyundai.com/content/dam/hyundai/kr/ko/images/main/main-customer-bg-m.gif"); background-color: #dedede;}
+    .customer-service .top .title {font-size : 44px; font-family : 'HeadMedium'; text-align: center; margin-bottom: 60px;}
+    .customer-service .top .sub { font-size: 14px; font-weight: 600; font-family : 'HeadRegular'; text-align: center; margin-bottom: 40px;}
+    .customer-service .top .button-wrap { width: 250px; margin: 0px auto;  display: flex;}
+    .customer-service .bottom .service-list {width: 100%; height: 250px; display: flex; margin-top: 100px;}
+        .customer-service .bottom .service-list .service-element { width: 25%; padding: 0px 20px}
+        .customer-service .bottom .service-list .service-element  .img-wrap {  position: relative; }
+        .customer-service .bottom .service-list .service-element  .img-wrap img {width: 100%; height: 100%;}
+            .customer-service .bottom .service-list .service-element  .img-wrap .inner-box { width: calc(100% - 10px); height: 40px; background-color: rgba(0,0,0,0.5); 
+                line-height: 2.5; font-size: 16px; color: white; font-weight: 600; position: absolute; bottom: 5px; padding-left: 10px;}
+
+.quick-menu{ position: fixed; width: 103px; height: 100vh; background-color: #3d3d3d;}
+    .quick-menu ul { text-align: center;}
+    .quick-menu ul li {height: 95px; background-color: red; color: white; font-size : 13px; border-bottom: solid 1px #535353; background-color: #3d3d3d;}
+    .quick-menu ul li img { padding-top: 15px;}
+
+
+/* SLIDER */
+.slider-top {  }
+.slider-bottom {  }
+.slider-dm {  position: relative; overflow: hidden; max-width: var(--sliderMaxWidth); float : right;}        
+.slider-wrap { height: var(--sliderHeight); transition : transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s; overflow : hidden; position : relative}
+.slider-element { }
+.slider-buttons-wrap { width : 100%; height : 70px; position : absolute; top : calc(50% - 70px); }
+.slider-controller-wrap { width: 100%; height: var(--sliderControllerHeight); background-color: #e6e1dd;}
+.slider-controller-list { display: flex; margin: 0px auto; padding-top: 30px;}
+.slider-controller-element { width: 12px; height: 12px; border: 1px solid #726e69; border-radius: 100%; background: transparent; cursor: pointer; margin: 0px 5px; display: inline-block;}
+
+/* MENU-SELECTOR */
+.car-selecter { width: 100%; max-width: var(--sliderMaxWidth); float : right;}
+    .car-selecter-box { height:  400px; position: relative; overflow: hidden;}
+        .car-selecter-nav {height: 65px; }
+            .car-selecter-nav-list { display: flex; height: 100%; width: 100%; max-width: 1000px; margin: 0px auto; background-color : #444; text-align : center; }
+                .car-selecter-nav-list li { width: 14.2%; font-family: 'TextMedium'; font-size: 14px; font-weight: 600; color: white;}
+                .car-selecter-nav-list li a{ padding: 20px; display: inline-block; line-height: 2;}
+    .car-selecter-button-wrap { width : 100%; height : 70px; position : absolute; top : calc(50% - 70px);}
+        .car-selecter-button-wrap div { position: relative; z-index: 1;}
+    .car-selecter-move-wrap { height: var(--sliderHeight); transition : transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1) 0s; }
+
+
+/* VR-CAR */
+.vr-template { margin: 0px auto; max-width: var(--sliderMaxWidth); height: 600px; 
+    background : url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/images/common/bg_pip_360vr_w.png") repeat-x left bottom; 
+    position: relative; }
+    .car-ui-box { position: absolute; width: 100%; height: 100%; top: 0px; cursor: pointer; }
+    .car-type { padding-left: 20px; font-size: 40px; }
+    .car-select { position: absolute; bottom: 0px; width: 100%; }
+        .car-select ul { display: flex; } 
+        .car-select ul li { margin: 10px; width: 100px; height: 50px; }
+    .car-place { margin: 0px auto; width: 800px; height: 500px; cursor: pointer; }
+        .car-img { width: 100%; height: 100%; }
+
+
+/* BUTTON */
+.button { }
+.b-blue { width: 150px; height: 40px; color: white; background-color: #002c5e; font-size: 13px; text-align: center; line-height: 3; padding: 0px 10px; margin: 0px 10px;}
+.b-left { width: 50px; height: 58px; cursor: pointer; float: left; background: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/images/common/ico_mobile_50.png") no-repeat;
+    background-position: 0 -75px; background-color: black; opacity: 0.5;}
+.b-right { width: 50px; height: 58px; cursor: pointer; float: right; background: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/images/common/ico_mobile_50.png") no-repeat;
+    background-position: 0 -125px; background-color: black; opacity: 0.5;}
+.b-selector { }
+.b-menu { }
+
+
+/* EFFECT */
+.e-slider-controller-active {background-color : #006992 !important;}
+.e-menu-active { background-color: white !important; color:  black !important;}
+.e-car-var-color-pick { width: 22px; height: 22px; position: absolute; background: url("https://www.hyundai.com/etc/designs/hyundai/kr/ko/images/common/bg_active.png");}
+
+
+/* global */
+body    {   font-size: 0.938em; }
+html, body, div, span, iframe, p, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+input, textarea, button, select, table, th, td, article, aside, section, figure, figcaption, img
+{   margin: 0px;    padding: 0px;   border: 0px;    }
+
+a{  text-decoration: none;  color: inherit; }
+li{ list-style:none;    }

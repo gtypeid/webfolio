@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- ICON -->
+    <link rel="shortcut icon" href="//t1.kakaocdn.net/kakaofriends_global/static/img/favicon.ico" type="image/x-ico">
+
+    <!-- Jquery LIB-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- BOOTSTARP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Excel Plug-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.3/xlsx.full.min.js" type="text/javascript"></script>
+
+
+     <!-- MY SCRIPT AND STYLE -->
+    <script src="main-script.js"></script>
+     <!-- media="(min-width: 769px)" 와 처럼 분기 가능 하지만 사이트는 언제든지 변경 가능하므로 불필요한 조건 처리로 최적하면에선 좋지 않다고 한다 
+          css는 하나로만 관리하고 안쪽에서 분기 처리 -->
+    <link rel="stylesheet" type="text/css" href="main-style.css">
+
+    <title>DEOK CHUN FRIENDS</title>
+</head>
+<body>
+    <!-- inpte excelExport -->
+    <!-- <input type="file" id="excelFile" onchange="excelExport(event)"/> -->
+    
+    <div class="main-head">
+        <div class="main-head-scroll"></div>
+        <div class="mian-head-inner">
+            <a href="setup-finish.html" class="main-home"> 
+                <h1 class="main-logo"> DEOK CHUN FRIENDS </h1> 
+            </a>
+
+            <ul class="main-head-table">
+                <!-- 추가 패딩 적용-->
+                <li class="main-head-table-element" style="padding-left: 200px">카테고리</li>
+                <li class="main-head-table-element">스토어</li>
+                <li class="main-head-table-element">매장안내</li>
+                <li class="main-head-table-element">고객센터</li>
+            </ul>
+            
+            <ul class="main-head-table-util">
+                <li class="main-head-table-element">
+                    <img src="https://img.icons8.com/android/30/000000/search.png">
+                </li>
+                <li class="main-head-table-element">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/individual-server.png">
+                </li>
+                <li class="main-head-table-element">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/shopping-basket-2.png">
+                </li>
+                <li class="main-head-table-element">
+                    <img src="https://img.icons8.com/material/30/000000/globe--v2.png">
+                </li>
+            </ul>
+            
+
+        </div>
+
+        <!-- <div class="main-head-after"></div> -->
+    </div>
+
+    <div class="main-wrap">
+
+        <div class="main-contnet">
+
+            <div class="main-contnet-inner">
+
+                <div class="intro-image">
+                    <div class="intro-image-wrap">
+                        <img class= "intro-big" src="https://t1.daumcdn.net/friends/prod/category/20181002_W_categorytop_niniz_4360ab.jpg" style="margin : 0 -660px">
+                        <img class= "intro-small" src="http://cdnimage.ebn.co.kr/news/201711/news_1510622738_917498_main1.jpg">
+                    </div>
+                </div>
+
+                <div class="content-wrap">
+                    <div class="contnet-category">
+                        <ul class="contnet-category-table">
+                            <li> <a href="" class="content-category-table-element" onclick="ChangeCategory(this);">전체</a> </li> 
+                            <li> <a href="" class="content-category-table-element" onclick="ChangeCategory(this);">앙몬드</a> </li> 
+                            <li> <a href="" class="content-category-table-element" onclick="ChangeCategory(this);">스카피</a> </li> 
+                            <li> <a href="" class="content-category-table-element" onclick="ChangeCategory(this);">죠르디</a> </li> 
+                            <li> <a href="" class="content-category-table-element" onclick="ChangeCategory(this);">케로&베로니</a> </li> 
+                        </ul>
+                    </div>
+                        <ul class="contnet-category-sort-table">
+                            <li class="content-category-sort-table-element" id="item-count">총 개 의 상품이 조회되었습니다.</li>
+                            <li class="content-category-sort-table-element">신상품순</li>
+                        </ul>
+                    <div class="list-wrap">
+                        <!-- DYNAMIC APPEND TABLE ELEMENT -->
+                        <ul class="list-table">
+                        </ul>
+                    </div>
+                
+                    <div class="main-contnet-end"> </div>
+                    <div class="page-wrap">
+                        <!-- <a href="" class="page-element">1</a> -->
+                    </div>    
+                </div>
+
+            </div>
+        </div>
+
+        <div class="main-footer">
+            <div class="main-footer-inner">
+                <div class="main-footer-service">
+                    <a href="" class="main-footer-service-element">개인정보처리방침</a>
+                    <!-- 추가 패딩 적용-->
+                    <a href="" class="main-footer-service-element"style="padding-left: 30px">이용약관</a>
+                    <!-- 추가 패딩 적용-->
+                    <a href="" class="main-footer-service-element"style="padding-left: 30px">제휴문의</a>
+                </div>
+
+                <small class="main-footer-infor-wrap">
+                    <div class="main-footer-infor-element">가나다라마바 사업자등록번호 : 999-99-99999</div>
+                    <div class="main-footer-infor-element">통신판매업 신고번호 : 2019-서울강남-99999</div>
+                    <div class="main-footer-infor-element">대표이사 : 박덕춘</div>
+                    <div class="main-footer-infor-element">주소 : 서울특별시 강남구 테헤란로 521 파르나스타워, 27층</div>
+                    <div class="main-footer-infor-element">abcdef@gmail.com</div>
+                    <div class="main-footer-infor-element">글로벌 배송 문의 : global@gmail.com</div>
+                    <div class="main-footer-infor-element"><br><br><br>Copyright © PARK DEOK CHUN CORP.</div>
+                </small>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
+
+

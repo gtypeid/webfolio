@@ -1,0 +1,140 @@
+
+
+//** display **//
+- 모든 상태는 기본 Block로 시작 | 예외도 있음
+
+- 블럭 상태로 지정 width, height 지정 가능 | 세로로 정렬 됨
+display: block
+
+- 인라인 상태로 지정 width, height 지정 불가능 | 가로로 쭉 일렬로 정렬됨
+display: inline
+
+- block과 inline 합친 것 가로로 정렬이 되면서, width, height 지정 가능
+display: inline-block
+
+- display inline과도 비슷하나 좀 더 범용적으로 사용 되는듯 가로 정렬 가능
+float: left 
+
+- div 안에 Element들을 float화 시키면 구성 요소를 확인 할 수 없다 이럴 때에 overflow로 float화 시킨 엘리먼트들을 적용 시켜줄 수 있다
+overflow: hidden
+
+
+
+//** style **//
+- 순서
+padding(내부) - border(중간) - margin(밖)
+
+- 여백 생성 | 4개의 인자를 넣으면 차례대로 설정되지만 인자가 부족할 때마다 동일한 값이 설정됨 
+padding: top right bottm left
+
+- 외각 하단 설정
+border-bottom: 1px solid #222
+
+- 외각
+margin: -15px
+
+- 절대적 뷰포트 위치로 이동 | 
+position: absolute; | left: 50px;
+
+- 상대 좌표 이동
+postion: relative도
+
+- 순서 z-buffer
+z-index: 1
+
+- 정렬 | 아마도 inline에서 가능한 것일듯 (linlin block 이나)
+text-align: center;
+
+
+//** font **//
+- 폰트 사이즈
+font-size: 16px;
+
+- 폰트 굵기
+font-weight : 1000; | normal(400) bold
+
+- 폰트 색 | 알파 가능
+color
+color : rgba(255, 255, 255, 0.7); 
+
+
+
+//** Table **// 
+- 문단 앞 ' 점 자를 없앤다 
+list-style: none;
+
+
+//** resource-img **/
+- 링크된 (href) 글자에 밑줄을 제거
+text-decoration: none
+- 이미지 라운드
+border-radius: 5%;
+- css 에서의 img 변경
+content:url("https://t1.daumcdn.net/friends/prod/category/20181002_M_categorytop_niniz_4360ab.jpg");
+
+
+//** tag **//
+- 이름이 없는 태그들| 기본 값들 div display: block / span display: inline | 혹은 inline block
+<div class> [content]</div>
+<spans class> [content] </span>
+
+- 테이블 
+<ul class>
+	<li class>
+    [content]
+	</li
+<ul>
+
+- 링크
+<a href="" class=""> [content] </a>
+
+- 인풋 
+<input type="file" id="input_manager">
+
+//** tag-style **//
+-제목
+<h1> </h1>
+
+- 글씨 작게
+<small class=""> </small>
+
+//** tag-resource **//
+- 이미지 | alt 문제가 발생했을때 처리 됨 (공백도 가능)
+<img src=" [content] " alt="">
+
+
+
+//** tag-head **//
+- documnet 아이콘
+<link rel="shortcut icon" href=" [icon link] " type="image/x-ico">
+
+- run script
+<script src= " [script] " type="text/javascript"> </script>
+
+- run css style
+<link rel="stylesheet" type="text/css" href=" [style] ">
+
+
+
+//** 접근 **//
+- style 안에 있는 float 옵션 값에 접근
+style="float: left"
+
+- css에서의 하위에 접근 |table -> table element 처럼 접근 가능 
+| list-table 
+| ㄴ  list-table-element
+.list-table list-table-element
+{
+
+}
+
+
+
+//** Script Reference **/
+- 아래 요소들은 JQuery
+$(.class) $(#id) 
+&(#id).attr("class") | attr("id") | other..
+
+- 아래 요소들은 javascript
+(documnet).getElementBy 
+(docmunet).getElementById[0].class

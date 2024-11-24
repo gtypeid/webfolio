@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- ICON -->
+    <link rel="shortcut icon" href="//t1.kakaocdn.net/kakaofriends_global/static/img/favicon.ico" type="image/x-ico">
+
+    <!-- Jquery LIB-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- BOOTSTARP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- TOUCHSWIPE -->
+    <script src="http://gid11051.dothome.co.kr/jquery.touchSwipe.min.js"></script>
+
+
+    <!-- Excel Plug-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.3/xlsx.full.min.js" type="text/javascript"></script>
+
+
+     <!-- MY SCRIPT AND STYLE -->
+     <script src="main-script.js"></script>
+     <!-- media="(min-width: 769px)" 와 처럼 분기 가능 하지만 사이트는 언제든지 변경 가능하므로 불필요한 조건 처리로 최적하면에선 좋지 않다고 한다 
+          css는 하나로만 관리하고 안쪽에서 분기 처리 -->
+    <link rel="stylesheet" type="text/css" href="main-style.css">
+
+    <title>DEOK CHUN FRIENDS</title>
+</head>
+<body>
+    <div class="main-head">
+        <div class="main-head-scroll"></div>
+        <div class="mian-head-inner">
+            <a href="./setup-finish.html" class="main-home"> <h1 class="main-logo"> DEOK CHUN FRIENDS </h1> </a>
+
+            <ul class="main-head-table">
+                <!-- 추가 패딩 적용-->
+                <li class="main-head-table-element" style="padding-left: 200px">카테고리</li>
+                <li class="main-head-table-element">스토어</li>
+                <li class="main-head-table-element">매장안내</li>
+                <li class="main-head-table-element">고객센터</li>
+            </ul>
+            
+            <ul class="main-head-table-util">
+                <li class="main-head-table-element">
+                    <img src="https://img.icons8.com/android/30/000000/search.png">
+                </li>
+                <li class="main-head-table-element">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/individual-server.png">
+                </li>
+                <li class="main-head-table-element">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/shopping-basket-2.png">
+                </li>
+                <li class="main-head-table-element">
+                    <img src="https://img.icons8.com/material/30/000000/globe--v2.png">
+                </li>
+            </ul>
+            
+
+        </div>
+
+        <!-- <div class="main-head-after"></div> -->
+    </div>
+
+    <div class="main-wrap">
+
+        <div class="main-contnet">
+
+            <div class="main-contnet-inner">
+
+                <div class="intro-carousel">
+                    <div class="intro-carousel-wrap">
+                        <div class="carousel slide " data-rie="carousel" id="content-slide">
+
+                            <!-- data input-->
+                            <ol class="carousel-indicators">
+                              <li data-taget="#content-slide" data-slide-to="0" class="active"></li>
+                              <li data-taget="#content-slide" data-slide-to="1"></li>
+                              <li data-taget="#content-slide" data-slide-to="2"></li>
+                            </ol>
+                      
+                            <!-- wrap slide -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                  <img src="#" class="carousel-item" alt="" style="width:100%;">
+                                </div>
+                          
+                                <div class="item">
+                                  <img src="#" class="carousel-item" alt="" style="width:100%;">
+                                </div>
+                              
+                                <div class="item">
+                                  <img src="#" class="carousel-item" alt="" style="width:100%;">
+                                </div>
+                              </div>
+                      
+                            <!-- controller -->
+                            <a class= "left carousel-control" href="#content-slide" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                      
+                            <a class= "right carousel-control" href="#content-slide" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="content-wrap">
+                    <div class="contnet-detail">
+                      <span class="contnet-detail-nav-wrap">
+                          <a href="./setup-finish.html" class="contnet-detail-nav-home" onclick="ChangeCategory(this);">전체 </a>
+                          <span class="contnet-detail-element-slash"> / </span>
+                          <a href="./setup-finish.html" class="contnet-detail-nav-category" onclick="ChangeCategory(this);"># </a>
+                      </span>
+
+                      <h1 class="contnet-detail-element-name">#</h3>
+                      <h3 class="contnet-detail-element-price">#</h3>
+                    </div>
+                    <div class="content-img">
+                    </div>   
+
+                    <div class="content-about">
+                      <p>※ 사진은 아이폰 X/XS 기종입니다. </p>
+                      <p>※ 사진은 아이폰 X/XS 기종입니다. </p>
+                      <p>※ 사진은 아이폰 X/XS 기종입니다. </p>
+                      <p>※ 사진은 아이폰 X/XS 기종입니다. </p>
+                      <p>※ 사진은 아이폰 X/XS 기종입니다. </p>
+                      <p>※ 사진은 아이폰 X/XS 기종입니다. </p>
+                      <p>※ 사진은 아이폰 X/XS 기종입니다. </p>
+                      <p>※ 사진은 아이폰 X/XS 기종입니다. </p>
+                      <p>※ 사진은 아이폰 X/XS 기종입니다. </p>
+                      <p>※ 사진은 아이폰 X/XS 기종입니다. </p>
+                    </div>
+
+                    <div class="content-line"></div>
+
+                    <div class="contnet-prev-item-wrap">
+                      <strong class="content-prev-item-name">최근 본 상품</strong>
+                      <!-- APPEND UL TABLE -->
+                      <ul class="content-prev-item-liet">
+
+                        <!--
+                          <li class="">
+                            <a href="" class="prev-href-wrap">
+                              <span class="prev-thumg-wrap">
+                                  <img src="https://img1.daumcdn.net/thumb/R300x300/?fname=https%3A%2F%2Ft1.daumcdn.net%2Ffriends%2Fprod%2Fproduct%2FAW_00_Baby_Pillow_SC.jpg" alt="" class="prev-thumg-img">
+                              </span>
+                              <strong class="prev-item-name">피규어키링_앙몬드</strong>
+                              <span class="prev-item-price">가격: 9,000원</span>
+                            </a>
+                          </li>
+                        -->
+                          
+                      
+                      </ul>
+
+                      <div class="content-line"></div>
+
+                      
+                      <a href="" class="contnet-prev-outtor-wrap">
+                        <img src="https://t1.kakaocdn.net/friends/prod/info/banner_charInfo_kr_W.png" alt ="" class="prev-item-outtro">
+                      </a>
+                      
+
+                    </div>
+
+
+
+                    
+                
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+

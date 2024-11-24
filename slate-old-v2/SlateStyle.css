@@ -1,0 +1,327 @@
+
+
+
+.main-wrap
+{
+    width: 100%;
+    height: 100%;
+}
+.head
+{
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background-color: cornflowerblue;
+
+    z-index: 3;
+}
+.nav
+{
+    width: 100%;
+    height: 100%;
+}
+
+.nav .nav-logo
+{
+    float: left;
+}
+
+.nav .nav-login
+{
+    float: right;
+}
+.nav ul
+{
+    float: left;
+    overflow: hidden;
+}
+.nav ul li
+{
+    float: left;
+}
+
+.content-wrap
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+}
+.content-tree
+{
+    color: yellow;
+}
+.size-wrap
+{
+    width: 1920px;
+    height: 1080px;
+    margin: 0px auto;
+}
+
+.widget
+{
+    width: 250px;
+    height: 450px;
+    background-color: cornflowerblue;
+
+    position: absolute;
+
+    border-radius: 13px;
+    box-shadow: 3px 3px 7px rgba(0,0,0,.5);
+
+    display: none;
+
+    z-index: 1;
+}
+
+.widget-box-top
+{
+    width: 100%;
+    /* 45px */
+    height: 10%;
+}
+
+.widget-box-middle
+{
+    width: 100%;
+    height: 80%;
+
+    background-color:  rgba(100,100,100,0.3);
+}
+
+.widget-menu-wrap
+{
+    height: 20px;
+    padding: 5px 10px;
+}
+
+.widget-menu-element
+{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0.8;
+
+    float: left;
+
+    cursor: pointer;
+    text-align: center;
+
+    margin-left: 2px;
+    margin-right: 2px;
+
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+.widget-content-wrap
+{
+    max-height: 85%;
+    padding: 5px 12px;
+    overflow: hidden;
+    overflow-y: auto;
+
+    margin: 0px 5px;
+}
+
+.widget-content-visible
+{
+
+}
+
+.content-post
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    opacity: 0.8;
+
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+
+    cursor: pointer;
+
+}
+
+
+.widget-box-bottom
+{
+    width: 100%;
+    height: 10%;
+}
+
+.post-box
+{
+    min-height: 120px;
+}
+
+.detail-show-box > div > span
+{
+    display: inline-block;
+    width: 145px;
+}
+
+.detail-show-box > div > input
+{
+    width: 100px;
+}
+
+.b-pointer
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url("https://img.icons8.com/color/48/000000/drag-list-up.png");
+    background-size: cover;
+
+    position: relative;
+
+    float: left;
+
+    left: 50%;
+    transform: translate(-16px, 7px);
+
+}
+
+
+.b-exit
+{
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    background: url("https://img.icons8.com/color/48/000000/close-window.png");
+    background-size: cover;
+
+    float: right;
+    
+    transform: translate(-10px, 10px);
+
+    border-radius: 10%;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+
+}
+
+.b-slider
+{
+    width: 40px;
+    height: 20px;
+    transform: translate(-15px, 13px);
+}
+
+.b-resize
+{
+    position: absolute;
+
+    width: 20%;
+    height: 10%;
+
+    float: right;
+    right: -15px;
+    bottom: -10px;
+    opacity: 0.0;
+    cursor: nw-resize;
+}
+
+.b-nav-button
+{
+    cursor: pointer;
+}
+
+.effect-nav-box-select
+{
+    border-bottom: 5px solid black;
+}
+
+.effect-menu-element-select
+{
+    background-color: yellow;
+    opacity: 0.8;
+}
+
+.effect-click-cursor
+{
+    background: url("https://img.icons8.com/plasticine/100/000000/hand-cursor.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    position: absolute;
+    
+    z-index: 100;
+}
+
+.effect-click-tree
+{
+    font-weight: bold;
+    font-size: 15px;
+    border : 2px solid black;  
+}
+
+.effect-slate-select
+{
+    border: 4px solid red !important;
+}
+
+
+.clib-textarea
+{
+    resize: vertical;
+    display: block;
+    float: left;
+
+    margin-right: 50px;
+}
+
+.html-mouse-util-box
+{
+    display: none;
+    width: 150px;
+    height: 200px;
+
+    background-color: yellow;
+    opacity: 0.9;
+
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.8);
+
+    z-index: 20;
+}
+
+.mu-element:hover
+{
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+/* --------------------------- */
+html, body, div, span, iframe, p, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, textarea, button, select, table, th, td, article, aside, section, figure, figcaption, img
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+
+body
+{
+}
+
+a 
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+li
+{
+    list-style:none;
+}
+
+/* Chrome, Safari용 스크롤 바 */
+::-webkit-scrollbar {width: 8px; height: 8px; border: 3px solid #fff; }
+::-webkit-scrollbar-button:start:decrement, 
+::-webkit-scrollbar-button:end:increment {display: block; height: 10px; background: url() #efefef}
+::-webkit-scrollbar-track {background: #efefef; -webkit-border-radius: 10px; border-radius:10px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.2)}
+::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: rgba(0,0,0,.2); -webkit-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.1)}

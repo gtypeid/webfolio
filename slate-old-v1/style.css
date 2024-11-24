@@ -1,0 +1,306 @@
+
+
+/*
+    상황에 따른 좌우 스크롤 숨김
+    overflow-x: hidden;
+    overflow-y
+*/
+
+/* --------------------------- */
+
+.main-wrap
+{
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+
+    position: absolute;
+}
+
+.left-wrap
+{
+    float: left;
+    width: 82%;
+    height: 100%;
+    background-color: blue;
+
+    position: relative;
+
+}
+
+.right-wrap
+{
+    float: left;
+    width: 18%;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.top-wrap
+{
+    width: 100%;
+    height: 10%;
+    overflow: scroll;
+
+    background-color: coral;
+    position: relative;
+}
+
+
+/* --------------------------- */
+
+.post-box
+{
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow-y: scroll;
+
+    position: relative;
+}
+
+.console-box
+{
+    width: 50%;
+    height: 100%;
+    float: right;
+    overflow-y: scroll;
+    background-color: gray;
+
+
+
+}
+
+.work-box
+{
+    width: 100%;
+    height: 90%;
+    overflow: scroll;
+
+    background-color: green;
+
+        /*
+    position: relative;
+    */
+}
+
+.tree-box
+{
+    width: 100%;
+    height: 50%;
+    overflow: scroll;
+    background-color: white;
+
+    position: relative;
+}
+
+.detail-box
+{
+    width: 100%;
+    height: 50%;
+    overflow: scroll;
+
+    background-color: gray;
+}
+
+
+/* --------------------------- */
+
+.post
+{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border: 1px solid black;
+
+    cursor: pointer;
+}
+
+.p-div
+{
+}
+
+.p-span
+{
+
+}
+
+.p-a
+{
+
+}
+
+.p-ul
+{
+
+}
+
+.p-li
+{
+
+}
+
+/* --------------------------- */
+
+.tree
+{
+
+}
+
+
+
+.tree-select
+{
+
+    font-weight: bold;
+    font-size: 15px;
+    border : 2px solid black;    
+}
+.tree-element-select
+{
+    background-color: gray;
+    color: black;
+    font-weight: bold;
+}
+
+/* --------------------------- */
+
+.slate-select
+{
+    border: 4px solid red !important;
+}
+
+/* --------------------------- */
+
+.bm-button
+{
+    cursor: pointer;
+    z-index: 5;
+}
+.bm-button-click
+{
+    position: relative;
+}
+
+.bm-button-0
+{
+    width: 20px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+}
+
+.bm-button-1
+{
+    width: 200px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    right: 50%;
+    bottom: 0px;
+
+}
+
+.bm-button-2
+{
+    width: 70px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    right: 50%;
+    bottom: 0px;
+
+}
+
+.bm-button-3
+{
+    width: 20px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+}
+
+.bm-wrap
+{
+    
+}
+
+/* --------------------------- */
+
+.mouse-util-box
+{
+    display: none;
+    width: 150px;
+    height: 200px;
+    background-color: gray;
+
+    z-index: 1;
+}
+
+.mu-element:hover
+{
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+/* --------------------------- */
+.clib-text-box
+{
+    margin: 0px 30px;
+}
+
+.clib-text-box button
+{
+    font-size: 16px;
+}
+.clib-textarea
+{
+    resize: vertical;
+    display: block;
+    float: left;
+
+    margin-right: 50px;
+}
+
+
+/* --------------------------- */
+
+.dvtext
+{
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 140px;
+    display: inline-block;
+}
+
+/* --------------------------- */
+html, body, div, span, iframe, p, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, textarea, button, select, table, th, td, article, aside, section, figure, figcaption, img
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body
+{
+     /* overflow: hidden; */
+}
+
+a 
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+li
+{
+    list-style:none;
+}

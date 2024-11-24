@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Jquery LIB-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="SlateScript.js"></script>
+
+    <title>SLATE</title>
+</head>
+<body>
+    <div class="main-wrap">
+        <div class="mouse-util-box">
+            <div class="mu-element" onclick="MenuClick(this, 0);">삭제</div>
+            <div class="mu-element" onclick="MenuClick(this, 1);">복사</div>
+            <div class="mu-element" onclick="MenuClick(this, 2);">붙여넣기</div>
+        </div>
+        <div class="left-wrap">
+            <div class="top-wrap">
+                <div class="bm-button-1 bm-button"></div>
+                <div class="post-box">
+                    <div class="bm-button-3 bm-button"></div>
+                    <!--
+                    <div class="p-div post"></div>
+                    <div class="p-span post"></div>
+                    <div class="p-a post"></div>
+                    <div class="p-ul post"></div>
+                    <div class="p-li post"></div> -->
+            
+                    <div class="p-div post"></div>
+                    <div class="p-div post"></div>
+                    <div class="p-div post"></div>
+                    <div class="p-div post"></div>
+                    <div class="p-div post"></div>
+                    <div class="p-div post"></div>
+                    <div class="p-div post"></div>
+                    <div class="p-div post"></div>
+                    <div class="p-div post"></div>
+                    <div class="p-div post"></div>
+                    <div class="p-div post"></div>
+                </div>
+                <div class="console-box">
+                    <div class="clib-text-box">
+                        <textarea class="clib-textarea" id="story" name="story" rows="7" cols="60">null</textarea>
+                        <div>
+                            <a class="html-down-button" href="" onclick="CopyButtonClick(this, 0);" download="html.html">DOWN : HTML</a>
+                            <a class="html-down-button" href="" onclick="CopyButtonClick(this, 1);" download="css.css">DOWN : CSS</a>
+                        </div>
+                        <div>
+                            <button onclick="CopyButtonClick(this, 2);">COPY : HTML</button>
+                            <button onclick="CopyButtonClick(this, 3);">COPY : CSS</button>
+                            <button onclick="CopyButtonClick(this, 4);">COPY : JSON</button>
+                        </div>
+                        <div>
+                            <a class="html-down-button" href="" onclick="ExecFunction(this, 0);" download="json.json">SAVE</a>
+                            <button onclick="ExecFunction(this, 1);">LOAD</button>
+                        </div>
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="work-box">
+
+            </div>
+
+            <div class="bm-button-0 bm-button"></div>
+        </div>
+        <div class="right-wrap">
+            <div class="tree-box">
+                <div class="bm-button-2 bm-button"></div>
+
+            </div>
+
+            <div class="detail-box">
+                <div class="detail-show-box">
+                    <div class=""> 
+                        <span class="dvtext">name</span>
+                        <!-- <input type="text" name="" value="name">  -->
+                        <input class="dv-name" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">innerHTML</span>
+                        <input class="dv-innerHTML" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">color</span>
+                        <input class="dv-color" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">font-size</span>
+                        <input class="dv-font-size" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">display</span>
+                        <input class="dv-display" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">overflow</span>
+                        <input class="dv-overflow" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">width</span>
+                        <input class="dv-width" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">height</span>
+                        <input class="dv-height" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">position</span>
+                        <input class="dv-position" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">top</span>
+                        <input class="dv-top" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">right</span>
+                        <input class="dv-right" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">bottom</span>
+                        <input class="dv-bottom" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">left</span>
+                        <input class="dv-left" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">padding</span>
+                        <input class="dv-padding" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">margin</span>
+                        <input class="dv-margin" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">border</span>
+                        <input class="dv-border" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">background-color</span> 
+                        <input class="dv-background-color" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">background-image</span>
+                        <input class="dv-background-image" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">background-repeat</span>
+                        <input class="dv-background-repeat" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                    <div class=""> 
+                        <span class="dvtext">background-size</span>
+                        <input class="dv-background-size" onchange="InputChange(this);" type="text" name="" value="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
