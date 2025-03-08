@@ -1,5 +1,5 @@
 # 웹 폴리오
-<img src="https://gtypeid.github.io/resource/path/folio/logo-3.png" width="300" alt="프로젝트 로고">
+<img src="https://gtypeid.github.io/resource/path/folio/logo-3.png" width="400" alt="프로젝트 로고">
 
 ## 📝 프로젝트 개요
 웹 퍼블리셔 커리큘럼 중 제작한 사이트들입니다.
